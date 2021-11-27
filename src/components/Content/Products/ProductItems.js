@@ -1,6 +1,7 @@
 import React from "react";
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
+import Swal from "sweetalert2";
 
 export default function ProductItems(props) {
   const dispatch = useDispatch();
@@ -21,9 +22,14 @@ export default function ProductItems(props) {
       image: productImage,
     };
 
-    console.log("Working");
     dispatch({ type: "increment cart count", addedProducts: order });
     dispatch({ type: "add amount", amount: productPrice });
+    
+    Swal.fire(
+      "Product Added",
+      `${productName} has been added to your cart`,
+      "success"
+    );
   };
   const productImage = props.products.productImage.trim();
   const path = "../../../../assets/images/products/" + productImage;

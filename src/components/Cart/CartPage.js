@@ -12,10 +12,14 @@ export default function CartPage() {
   let updatedOrder = [];
 
   //Function will be executed when the delete button inside <CartItem /> will be clicked and this will remove an item from the cart.
-  function deleteCartItem(cartItem) {
+  function deleteCartItem(cartItem, itemCount) {
     updatedOrder = pendingOrder.filter((item) => item != cartItem);
+    console.log(cartItem.amount * parseInt(itemCount));
     dispatch({ type: "decrement cart count", updatedProducts: updatedOrder });
-    dispatch({ type: "remove amount", amount: cartItem.amount });
+    dispatch({
+      type: "remove amount",
+      amount: cartItem.amount * parseInt(itemCount),
+    });
   }
 
   return (
@@ -24,9 +28,9 @@ export default function CartPage() {
         <div id="cart-page-container">
           <div id="cart-steps-container">
             <div id="cart-steps">
-                <p class="active">1. Shopping Cart</p>
-                <p>2. Shipping Details</p>
-                <p>3. Payment Options</p>
+              <p class="active">1. Shopping Cart</p>
+              <p>2. Shipping Details</p>
+              <p>3. Payment Options</p>
             </div>
             <div id="cart-product-container">
               <div id="specified-container">

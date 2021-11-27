@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
-import Swal from 'sweetalert2';
+import Swal from "sweetalert2";
 
 export default function CartItems(props) {
   let [itemCount, setItemCount] = useState(1);
@@ -19,34 +19,51 @@ export default function CartItems(props) {
   }
 
   function deleteHandler() {
-    props.deleteItem(cartProductList);
+    Swal.fire({
+      title: 'Are you sure?',
+      text: "Do you really wish to delete this item ?",
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Yes'
+    }).then((result) => {
+      if (result.isConfirmed) {
+        props.deleteItem(cartProductList, itemCount);
+        Swal.fire(
+          'Deleted!',
+          'Your file has been deleted.',
+          'success'
+        )
+      }
+    })
   }
   function incrementItemCount() {
     console.log("Executed +");
     if (itemCount > 2) {
       Swal.fire(
-        'Item Count Restriction',
-        'Quantity is limited to 3 per item',
-        'info'
-      )
+        "Item Count Restriction",
+        "Quantity is limited to 3 per item",
+        "info"
+      );
     } else {
       itemCount = itemCount + 1;
       setItemCount(itemCount);
-      dispatch({type: "add amount", amount: cartProductList.amount})
+      dispatch({ type: "add amount", amount: cartProductList.amount });
     }
   }
   function decrementItemCount() {
     console.log("Executed -");
     if (itemCount <= 1) {
       Swal.fire(
-        'Use delete rather',
-        'Click on delete button to delete the product',
-        'info'
-      )
+        "Use delete rather",
+        "Click on delete button to delete the product",
+        "info"
+      );
     } else {
       itemCount = itemCount - 1;
       setItemCount(itemCount);
-      dispatch({type: "remove amount", amount: cartProductList.amount})
+      dispatch({ type: "remove amount", amount: cartProductList.amount });
     }
   }
   return (

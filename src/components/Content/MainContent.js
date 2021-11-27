@@ -1,6 +1,8 @@
 import React from "react";
 import { Route, Switch, Redirect } from "react-router-dom";
+import Header from "../Header/Header";
 import AddProducts from "../Admin/AddProducts";
+import AddReview from "../Admin/AddReview";
 import Cart from "../Cart/CartPage";
 import Payment from "../Cart/Payment";
 import ShippingDetails from "../Cart/ShippingDetails";
@@ -19,6 +21,7 @@ export default function MainContent() {
         </Route>
         <Route path="/home">
           <React.Fragment>
+            <Header />
             <div id="categories">
               <Categories />
             </div>
@@ -28,6 +31,7 @@ export default function MainContent() {
         </Route>
         <Route path="/smartphones" exact>
           <React.Fragment>
+            <Header />
             <div id="categories">
               <Categories />
             </div>
@@ -36,6 +40,7 @@ export default function MainContent() {
         </Route>
         <Route path="/electronics" exact>
           <React.Fragment>
+            <Header />
             <div id="categories">
               <Categories />
             </div>
@@ -44,6 +49,7 @@ export default function MainContent() {
         </Route>
         <Route path="/appliances" exact>
           <React.Fragment>
+            <Header />
             <div id="categories">
               <Categories />
             </div>
@@ -52,6 +58,7 @@ export default function MainContent() {
         </Route>
         <Route path="/category-home" exact>
           <React.Fragment>
+            <Header />
             <div id="categories">
               <Categories />
             </div>
@@ -60,6 +67,7 @@ export default function MainContent() {
         </Route>
         <Route path="/grocery" exact>
           <React.Fragment>
+            <Header />
             <div id="categories">
               <Categories />
             </div>
@@ -68,6 +76,7 @@ export default function MainContent() {
         </Route>
         <Route path="/fashion" exact>
           <React.Fragment>
+            <Header />
             <div id="categories">
               <Categories />
             </div>
@@ -76,6 +85,7 @@ export default function MainContent() {
         </Route>
         <Route path="/stationary" exact>
           <React.Fragment>
+            <Header />
             <div id="categories">
               <Categories />
             </div>
@@ -84,6 +94,7 @@ export default function MainContent() {
         </Route>
         <Route path="/automobile" exact>
           <React.Fragment>
+            <Header />
             <div id="categories">
               <Categories />
             </div>
@@ -92,6 +103,7 @@ export default function MainContent() {
         </Route>
         <Route path="/toys" exact>
           <React.Fragment>
+            <Header />
             <div id="categories">
               <Categories />
             </div>
@@ -101,29 +113,39 @@ export default function MainContent() {
 
         <Route path="/products/:productId" exact>
           <React.Fragment>
-            <Categories />
+            <Header />
             <ProductDescription />
           </React.Fragment>
         </Route>
 
         <Route path="/my-cart" exact>
           <React.Fragment>
-            <Cart />
+            <Header />
+            <Cart/>
           </React.Fragment>
         </Route>
         <Route path="/shipping-details" exact>
           <React.Fragment>
+            <Header />
             <ShippingDetails />
           </React.Fragment>
         </Route>
         <Route path="/payment" exact>
           <React.Fragment>
+            <Header />
             <Payment />
           </React.Fragment>
         </Route>
         <Route path="/admin-shubham" exact>
           <React.Fragment>
+            <Header />
             <AddProducts />
+          </React.Fragment>
+        </Route>
+        <Route path="/admin-shubham-review" exact>
+          <React.Fragment>
+            <Header />
+            <AddReview />
           </React.Fragment>
         </Route>
         <Route path="/confirmation" exact>

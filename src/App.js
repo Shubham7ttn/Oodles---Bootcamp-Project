@@ -1,14 +1,9 @@
 import React from "react";
-import Header from "./components/Header/Header";
-import RootContent from "./components/Content/RootContent";
+import MainContent from "./components/Content/MainContent";
 const App = () => {
   return (
     <React.Fragment>
-      <header>
-        <Header />
-      </header>
-      <RootContent />
-      {/* <Footer /> */}
+      <MainContent />
     </React.Fragment>
   );
 };

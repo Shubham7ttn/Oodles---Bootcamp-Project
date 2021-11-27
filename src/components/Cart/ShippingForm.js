@@ -22,20 +22,35 @@ export default function ShippingForm(props) {
   const captureZipcode = useRef();
   const capturePhone = useRef();
 
+  let specialChars = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/;
   function validateFirstName() {
-    if (captureFirstName.current.value.toString().trim() === "") {
-      setFirstNameError("First name can't be empty");
+    let message = "";
+    if (captureFirstName.current.value.toString().trim() !== "") {
+      if (specialChars.test(captureFirstName.current.value.toString().trim())) {
+        message = "First name can't have special symbols";
+      } else {
+        message = "";
+      }
     } else {
-      setFirstNameError("");
+      message = "Please tell us your name";
     }
+
+    setFirstNameError(message);
   }
 
   function validateLastName() {
-    if (captureLastName.current.value.toString().trim() === "") {
-      setLastNameError("Last name can't be empty");
+    let message = "";
+    if (captureLastName.current.value.toString().trim() !== "") {
+      if (specialChars.test(captureLastName.current.value.toString().trim())) {
+        message = "Last name can't have special symbols";
+      } else {
+        message = "";
+      }
     } else {
-      setLastNameError("");
+      message = "Please tell us your last name";
     }
+
+    setLastNameError(message);
   }
 
   function validateAddress1() {
@@ -60,25 +75,48 @@ export default function ShippingForm(props) {
     }
   }
   function validateCity() {
-    if (captureCity.current.value.toString().trim() === "") {
-      setCityError("Please Enter City Name");
+    let message = "";
+
+    if (captureCity.current.value.toString().trim() !== "") {
+      if (specialChars.test(captureCity.current.value.toString().trim())) {
+        message = "City can't have special symbols";
+      } else {
+        message = "";
+      }
     } else {
-      setCityError("");
+      message = "Please tell us your city name";
     }
+
+    setCityError(message);
   }
   function validateZip() {
-    if (captureZipcode.current.value.toString().trim() === "") {
-      setZipcodeError("Please Enter Zip/Postal Code");
+    let message = "";
+
+    if (captureZipcode.current.value.toString().trim() !== "") {
+      if (captureZipcode.current.value.toString().length > 6) {
+        message = "ZIP/Postal Code must be 6 digits long";
+      } else {
+        message = "";
+      }
     } else {
-      setZipcodeError("");
+      message = "Please tell your ZIP/Postal Code";
     }
+
+    setZipcodeError(message);
   }
   function validatePhone() {
-    if (capturePhone.current.value.toString().trim() === "") {
-      setPhoneError("Please provide your contact details");
+    let message = "";
+    if (capturePhone.current.value.toString().trim() !== "") {
+      if (!capturePhone.current.value.toString().trim().length > 10) {
+        message = "Phone number must only have 10 digits";
+      } else {
+        message = "";
+      }
     } else {
-      setPhoneError("");
+      message = "Please tell your Phone Number";
     }
+
+    setPhoneError(message);
   }
 
   const shippingFormSubmitHandler = (event) => {

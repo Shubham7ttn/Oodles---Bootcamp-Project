@@ -97,6 +97,55 @@
     }
   }
 }
+#product-review-container {
+  background: #fff;
+  margin: 30px;
+  border-radius: 10px;
+  padding: 20px 30px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+  #customer-review-heading {
+    padding: 20px 0;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    letter-spacing: 0.2rem;
+    color: #4774c8;
+  }
+  #review-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    #no-reviews {
+      font-size: 1.2rem;
+      font-weight: bolder;
+      letter-spacing: 0.2rem;
+    }
+
+    #review-item {
+      display: flex;
+
+      #review-user,
+      #review-content {
+        font-weight: bolder;
+        padding: 20px 0;
+        text-align: justify;
+        letter-spacing: 0.1rem;
+      }
+      #review-user {
+        width: 20%;
+        font-size: 1.1rem;
+        color: #c84771;
+      }
+      #review-content {
+        width: 80%;
+        font-size: 1rem;
+        color: #4774c8;
+      }
+    }
+  }
+}
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (min-width: 320px) and (max-width: 479px) {
@@ -167,6 +216,41 @@
       }
     }
   }
+  #product-review-container {
+    margin: 20px;
+    border-radius: 10px;
+    padding: 20px;
+
+    #customer-review-heading {
+      padding: 10px 0;
+      font-size: 1rem;
+      letter-spacing: 0.1rem;
+    }
+    #review-container {
+      #no-reviews {
+        font-size: 1rem;
+        letter-spacing: 0.1rem;
+      }
+      #review-item {
+        flex-direction: column;
+        padding: 10px 0;
+        #review-user,
+        #review-content {
+          letter-spacing: 0.1rem;
+        }
+        #review-user {
+          padding: 5px 0;
+          width: 100%;
+          font-size: 0.7rem;
+        }
+        #review-content {
+          padding: 0;
+          width: 100%;
+          font-size: 0.6rem;
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (min-width: 480px) and (max-width: 600px) {
@@ -234,6 +318,41 @@
         font-size: 0.7rem;
         border-radius: 5px;
         letter-spacing: 0.1rem;
+      }
+    }
+  }
+  #product-review-container {
+    margin: 25px;
+    border-radius: 10px;
+    padding: 20px;
+
+    #customer-review-heading {
+      padding: 10px 0;
+      font-size: 1.2rem;
+      letter-spacing: 0.2rem;
+    }
+    #review-container {
+      #no-reviews {
+        font-size: 1.2rem;
+        letter-spacing: 0.2rem;
+      }
+      #review-item {
+        flex-direction: column;
+        padding: 10px 0;
+        #review-user,
+        #review-content {
+          letter-spacing: 0.2rem;
+        }
+        #review-user {
+          padding: 10px 0;
+          width: 100%;
+          font-size: 0.9rem;
+        }
+        #review-content {
+          padding: 0;
+          width: 100%;
+          font-size: 0.7rem;
+        }
       }
     }
   }
@@ -308,6 +427,41 @@
       }
     }
   }
+  #product-review-container {
+    margin: 25px;
+    border-radius: 10px;
+    padding: 20px;
+
+    #customer-review-heading {
+      padding: 10px 0;
+      font-size: 1.2rem;
+      letter-spacing: 0.2rem;
+    }
+    #review-container {
+      #no-reviews {
+        font-size: 1.2rem;
+        letter-spacing: 0.2rem;
+      }
+      #review-item {
+        padding: 10px 0;
+        flex-direction: column;
+        #review-user,
+        #review-content {
+          letter-spacing: 0.2rem;
+        }
+        #review-user {
+          padding: 10px 0;
+          width: 100%;
+          font-size: 0.9rem;
+        }
+        #review-content {
+          padding: 0;
+          width: 100%;
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -375,6 +529,40 @@
         font-size: 1rem;
         border-radius: 7px;
         letter-spacing: 0.2rem;
+      }
+    }
+  }
+  #product-review-container {
+    margin: 25px;
+    border-radius: 10px;
+    padding: 20px;
+
+    #customer-review-heading {
+      padding: 10px 0;
+      font-size: 1.2rem;
+      letter-spacing: 0.2rem;
+    }
+    #review-container {
+      #no-reviews {
+        font-size: 1.2rem;
+        letter-spacing: 0.2rem;
+      }
+      #review-item {
+        padding: 10px 0;
+        #review-user,
+        #review-content {
+          letter-spacing: 0.2rem;
+        }
+        #review-user {
+          padding: 10px 0;
+          width: 30%;
+          font-size: 0.9rem;
+        }
+        #review-content {
+          padding: 10px 0;
+          width: 70%;
+          font-size: 0.8rem;
+        }
       }
     }
   }

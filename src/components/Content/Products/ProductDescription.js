@@ -1,7 +1,9 @@
 import React, { useEffect, useState, useRef } from "react";
 import { useDispatch } from "react-redux";
 import { useParams } from "react-router";
+import Swal from "sweetalert2";
 import "../../../assets/styles/productDescription.css";
+import ProductReviews from "../Products/ProductReviews";
 export default function ProductDescription() {
   const dispatch = useDispatch();
   const [product, setProduct] = useState([]);
@@ -129,84 +131,101 @@ export default function ProductDescription() {
 
     dispatch({ type: "increment cart count", addedProducts: order });
     dispatch({ type: "add amount", amount: price });
+
+    Swal.fire(
+      "Product Added",
+      `${productName} has been added to your cart`,
+      "success"
+    );
   }
   return (
     <React.Fragment>
       {product.length > 0 ? (
-        <div id="product-description-container">
-          <div id="product-image-container">
-            <img src={imagePath} alt="image" />
-          </div>
-          <div id="product-complete-description">
-            <h1 id="product-name">{productName}</h1>
-            <h5 id="product-seller-name">Sold By: {sellerName}</h5>
-            {stockStatus ? (
-              <h5 class="product-stock-status" id="product-status-in-stock">
-                In Stock
-              </h5>
-            ) : (
-              <h5 class="product-stock-status" id="product-status-out-of-stock">
-                Out of Stock
-              </h5>
-            )}
-            <h1 id="product-price">&#8377; {price}</h1>
-            <p id="product-long-description">{description}</p>
-            <div id="product-variant-div">
-              {size !== undefined || size.length > 0 ? (
-                showSizeFlag ? (
-                  <div class="variant-selector" id="size-selector">
-                    <p>Size: </p>
-                    <select ref={captureSize}>
-                      {size.map((item) => {
-                        return (
-                          <option value={item.trim()}>{item.trim()}</option>
-                        );
-                      })}
-                    </select>
-                  </div>
-                ) : (
-                  ""
-                )
+        <React.Fragment>
+          <div id="product-description-container">
+            <div id="product-image-container">
+              <img src={imagePath} alt="image" />
+            </div>
+            <div id="product-complete-description">
+              <h1 id="product-name">{productName}</h1>
+              <h5 id="product-seller-name">Sold By: {sellerName}</h5>
+              {stockStatus ? (
+                <h5 class="product-stock-status" id="product-status-in-stock">
+                  In Stock
+                </h5>
               ) : (
-                <p></p>
+                <h5
+                  class="product-stock-status"
+                  id="product-status-out-of-stock"
+                >
+                  Out of Stock
+                </h5>
               )}
-              {color !== undefined || color.length > 0 ? (
-                showColorFlag ? (
-                  <div class="variant-selector" id="color-selector">
-                    <p>Color: </p>
-                    <select ref={captureColor}>
-                      {color.map((item) => {
-                        let index = color.indexOf(item);
-                        let bgColor = colorValue[index];
-                        return (
-                          <option
-                            value={item.trim()}
-                            style={{ background: bgColor }}
-                          >
-                            {item.trim()}
-                          </option>
-                        );
-                      })}
-                    </select>
-                  </div>
+              <h1 id="product-price">&#8377; {price}</h1>
+              <p id="product-long-description">{description}</p>
+              <div id="product-variant-div">
+                {size !== undefined || size.length > 0 ? (
+                  showSizeFlag ? (
+                    <div class="variant-selector" id="size-selector">
+                      <p>Size: </p>
+                      <select ref={captureSize}>
+                        {size.map((item) => {
+                          return (
+                            <option value={item.trim()}>{item.trim()}</option>
+                          );
+                        })}
+                      </select>
+                    </div>
+                  ) : (
+                    ""
+                  )
+                ) : (
+                  <p></p>
+                )}
+                {color !== undefined || color.length > 0 ? (
+                  showColorFlag ? (
+                    <div class="variant-selector" id="color-selector">
+                      <p>Color: </p>
+                      <select ref={captureColor}>
+                        {color.map((item) => {
+                          let index = color.indexOf(item);
+                          let bgColor = colorValue[index];
+                          return (
+                            <option
+                              value={item.trim()}
+                              style={{ background: bgColor }}
+                            >
+                              {item.trim()}
+                            </option>
+                          );
+                        })}
+                      </select>
+                    </div>
+                  ) : (
+                    ""
+                  )
                 ) : (
                   ""
-                )
+                )}
+              </div>
+              {stockStatus ? (
+                <button id="add-to-cart-btn" onClick={addProductHandler}>
+                  Add to Cart
+                </button>
               ) : (
-                ""
+                <p
+                  class="product-stock-status"
+                  id="product-status-out-of-stock"
+                >
+                  This Product is Currently out of Stock
+                </p>
               )}
             </div>
-            {stockStatus ? (
-              <button id="add-to-cart-btn" onClick={addProductHandler}>
-                Add to Cart
-              </button>
-            ) : (
-              <p class="product-stock-status" id="product-status-out-of-stock">
-                This Product is Currently out of Stock
-              </p>
-            )}
           </div>
-        </div>
+          <div id="product-review-container">
+            <ProductReviews id={productId} />
+          </div>
+        </React.Fragment>
       ) : (
         ""
       )}

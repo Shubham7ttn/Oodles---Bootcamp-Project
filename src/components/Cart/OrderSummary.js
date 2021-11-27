@@ -1,5 +1,6 @@
 import React, { useState, useRef } from "react";
 import { useSelector } from "react-redux";
+import Swal from "sweetalert2";
 
 export default function OrderSummary(props) {
   const captureCouponCode = useRef();
@@ -16,6 +17,7 @@ export default function OrderSummary(props) {
       const discountedPrice = totalAmount - totalAmount * (10 / 100);
       setTotal(discountedPrice);
       setCouponValid(true);
+      Swal.fire("Yippee Coupon Applied", `You have saved ${totalAmount * (10 / 100)}`, "success");
     } else {
       setCouponValid(false);
     }
