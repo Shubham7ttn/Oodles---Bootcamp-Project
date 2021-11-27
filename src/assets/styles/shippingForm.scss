@@ -1,0 +1,370 @@
+#shipping-details-form-container {
+  #shipping-details-form-header {
+    margin-bottom: 20px;
+    h1 {
+      text-transform: uppercase;
+      letter-spacing: 0.2rem;
+      font-size: 2rem;
+    }
+    p {
+      letter-spacing: 0.1rem;
+      font-weight: bolder;
+      font-size: 0.9rem;
+      color: #a61f12;
+    }
+  }
+
+  form {
+    padding: 20px 0;
+    .fields {
+      padding: 10px 0;
+      input,
+      select {
+        height: 30px;
+        padding: 20px;
+        font-size: 0.9rem;
+        font-weight: bolder;
+        color: #c84771;
+        border: 2px solid #c84772b0;
+        letter-spacing: 0.2rem;
+      }
+    }
+    #name-error, #city-country-error, #zip-phone-error{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .form-error {
+      font-size: 0.6rem;
+
+      color: red;
+      letter-spacing: 0.1rem;
+      font-weight: bolder;
+    }
+
+    #name-fields {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      input {
+        width: 45%;
+      }
+    }
+    #address-line1-field,
+    #address-line2-field {
+      input {
+        width: 100%;
+      }
+    }
+    #country-city-field,
+    #zip-phone-field {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      select,
+      input {
+        width: 45%;
+      }
+    }
+
+    #shipping-options-div {
+      margin-top: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      #free-shipping-container,
+      #next-day-shipping-container {
+        background: #cac9c9;
+        padding: 20px 10px;
+        width: 45%;
+        display: flex;
+        align-items: center;
+        h3 {
+          font-size: 1rem;
+        }
+        p {
+          font-size: 0.7rem;
+          font-weight: bolder;
+          letter-spacing: 0.1rem;
+        }
+        label {
+          padding: 0 20px;
+        }
+      }
+    }
+    #submit-button-container {
+      padding: 20px 0;
+      button {
+        padding: 20px 0;
+        width: 100%;
+        font-size: 1rem;
+        font-weight: bolder;
+        letter-spacing: 0.3rem;
+        background: #4774c8;
+        border: none;
+        outline: none;
+        color: #fff;
+
+        &:hover {
+          cursor: pointer;
+          box-shadow: #c84772b0 0px 0px 0px 3px;
+          color: #000;
+          background: #fff;
+        }
+      }
+    }
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  #shipping-details-form-container {
+    #shipping-details-form-header {
+      margin-bottom: 5px;
+      h1 {
+        letter-spacing: 0.2rem;
+        font-size: 1.2rem;
+        padding: 0 0 10px 0;
+      }
+      p {
+        letter-spacing: 0.1rem;
+        font-size: 0.5rem;
+      }
+    }
+    form {
+      padding: 10px 0;
+      .fields {
+        padding: 10px 0;
+        input,
+        select {
+          height: 15px;
+          padding: 15px;
+          font-size: 0.6rem;
+          border: 1px solid #c84772b0;
+          letter-spacing: 0.2rem;
+        }
+      }
+
+      #shipping-options-div {
+        margin-top: 10px;
+        #free-shipping-container,
+        #next-day-shipping-container {
+          padding: 20px 10px;
+          width: 45%;
+          height: 130px;
+          display: flex;
+          align-items: center;
+          h3 {
+            font-size: 0.7rem;
+          }
+          p {
+            font-size: 0.5rem;
+            letter-spacing: 0.1rem;
+          }
+          label {
+            padding: 0 20px;
+          }
+        }
+      }
+      #submit-button-container {
+        padding: 10px 0;
+        button {
+          padding: 15px 0;
+          font-size: 0.7rem;
+          letter-spacing: 0.2rem;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 600px) {
+  #shipping-details-form-container {
+    #shipping-details-form-header {
+      margin-bottom: 5px;
+      h1 {
+        letter-spacing: 0.2rem;
+        font-size: 1.2rem;
+        padding: 0 0 10px 0;
+      }
+      p {
+        letter-spacing: 0.1rem;
+        font-size: 0.5rem;
+      }
+    }
+    form {
+      padding: 10px 0;
+      .fields {
+        padding: 10px 0;
+        input,
+        select {
+          height: 15px;
+          padding: 15px;
+          font-size: 0.6rem;
+          border: 1px solid #c84772b0;
+          letter-spacing: 0.2rem;
+        }
+      }
+
+      #shipping-options-div {
+        margin-top: 10px;
+        #free-shipping-container,
+        #next-day-shipping-container {
+          padding: 20px 10px;
+          width: 45%;
+          height: 130px;
+          display: flex;
+          align-items: center;
+          h3 {
+            font-size: 0.7rem;
+          }
+          p {
+            font-size: 0.5rem;
+            letter-spacing: 0.1rem;
+          }
+          label {
+            padding: 0 20px;
+          }
+        }
+      }
+      #submit-button-container {
+        padding: 10px 0;
+        button {
+          padding: 15px 0;
+          font-size: 0.7rem;
+          letter-spacing: 0.2rem;
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 767px) {
+  #shipping-details-form-container {
+    #shipping-details-form-header {
+      margin-bottom: 5px;
+      h1 {
+        letter-spacing: 0.2rem;
+        font-size: 1.2rem;
+        padding: 0 0 10px 0;
+      }
+      p {
+        letter-spacing: 0.1rem;
+        font-size: 0.5rem;
+      }
+    }
+    form {
+      padding: 10px 0;
+      .fields {
+        padding: 10px 0;
+        input,
+        select {
+          height: 15px;
+          padding: 15px;
+          font-size: 0.6rem;
+          border: 1px solid #c84772b0;
+          letter-spacing: 0.2rem;
+        }
+      }
+
+      #shipping-options-div {
+        margin-top: 10px;
+        #free-shipping-container,
+        #next-day-shipping-container {
+          padding: 20px 10px;
+          width: 45%;
+          height: 130px;
+          display: flex;
+          align-items: center;
+          h3 {
+            font-size: 0.7rem;
+          }
+          p {
+            font-size: 0.5rem;
+            letter-spacing: 0.1rem;
+          }
+          label {
+            padding: 0 20px;
+          }
+        }
+      }
+      #submit-button-container {
+        padding: 10px 0;
+        button {
+          padding: 15px 0;
+          font-size: 0.7rem;
+          letter-spacing: 0.2rem;
+        }
+      }
+    }
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  #product-description-container {
+    border-radius: 10px;
+    padding: 20px;
+
+    #product-image-container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      img {
+        width: 400px;
+        height: 400px;
+      }
+    }
+    #product-complete-description {
+      width: 100%;
+      padding: 20px 30px;
+      #product-name {
+        font-size: 2rem;
+        letter-spacing: 0.2rem;
+      }
+      #product-seller-name {
+        font-size: 1.1rem;
+        padding: 5px 0;
+        letter-spacing: 0.2rem;
+      }
+      .product-stock-status {
+        padding: 5px 0;
+        font-size: 1.4rem;
+        letter-spacing: 0.2rem;
+      }
+      #product-price {
+        font-size: 2.7rem;
+        letter-spacing: 0.2rem;
+      }
+      #product-long-description {
+        padding: 10px 0;
+        font-size: 1rem;
+        letter-spacing: 0.1rem;
+        margin-bottom: 20px;
+      }
+      #product-variant-div {
+        padding: 10px 0;
+        margin-bottom: 30px;
+        .variant-selector {
+          margin: 0 35px 0 0;
+          p {
+            padding-right: 20px;
+            font-size: 1rem;
+            letter-spacing: 0.1rem;
+          }
+          select {
+            padding: 10px;
+            width: 25vw;
+            border-radius: 5px;
+            font-size: 1rem;
+          }
+        }
+      }
+      #add-to-cart-btn {
+        padding: 20px 25px;
+        font-size: 1rem;
+        border-radius: 7px;
+        letter-spacing: 0.2rem;
+      }
+    }
+  }
+}

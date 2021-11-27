@@ -1,0 +1,127 @@
+#header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 40px;
+  background: #fff;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  margin-bottom: 20px;
+}
+
+#header #logo {
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#header #large-logo {
+  height: 75px;
+  width: 370px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  #header {
+    padding: 10px 13px;
+  }
+  #header #small-logo {
+    height: 10vw;
+    width: 12vw;
+  }
+  #header #large-logo {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 600px) {
+  #header {
+    padding: 15px;
+  }
+  #header #small-logo {
+    height: 40px;
+    width: 40px;
+  }
+  #header #large-logo {
+    display: none;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 601px) and (max-width: 767px) {
+  #header {
+    padding: 20px 15px;
+  }
+  #header #small-logo {
+    display: none;
+  }
+  #header #large-logo {
+    height: 35px;
+    width: 160px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  #header {
+    padding: 20px;
+  }
+  #header #small-logo {
+    display: none;
+  }
+  #header #large-logo {
+    height: 45px;
+    width: 200px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  #header {
+    padding: 20px 30px;
+  }
+  #header #small-logo {
+    display: none;
+  }
+  #header #large-logo {
+    height: 55px;
+    width: 250px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  #header {
+    padding: 20px 30px;
+  }
+  #header #small-logo {
+    display: none;
+  }
+  #header #large-logo {
+    height: 60px;
+    width: 280px;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  #header {
+    padding: 20px 40px;
+  }
+  #header #small-logo {
+    display: none;
+  }
+}
+/*# sourceMappingURL=header.css.map */

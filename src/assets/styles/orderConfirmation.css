@@ -1,0 +1,240 @@
+#order-confirmation-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 50px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  justify-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#order-confirmation-container #greetings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  justify-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  color: #0d7a16;
+}
+
+#order-confirmation-container #greetings h1 {
+  font-size: 4vw;
+  letter-spacing: 0.3rem;
+}
+
+#order-confirmation-container #greetings h1 i {
+  margin: 0 10px;
+}
+
+#order-confirmation-container #greetings h3 {
+  font-size: 1.5vw;
+  letter-spacing: 0.3rem;
+  margin-bottom: 20px;
+}
+
+#order-confirmation-container #greetings #continue-shopping {
+  padding: 10px 20px;
+  font-size: 1.2vw;
+  background: #c84771;
+  color: #fff;
+  border-radius: 7px;
+}
+
+#order-confirmation-container #greetings #continue-shopping:hover {
+  color: black;
+  background: #e7e5e5;
+  -webkit-box-shadow: #4774c8b4 0px 0px 0px 3px;
+          box-shadow: #4774c8b4 0px 0px 0px 3px;
+}
+
+#order-confirmation-container #invoice {
+  background: #fff;
+  padding: 20px;
+  border-radius: 7px;
+}
+
+#order-confirmation-container #invoice #invoice-heading {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#order-confirmation-container #invoice #invoice-heading h4 {
+  font-weight: bolder;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+#order-confirmation-container #invoice #invoice-shipping {
+  margin-bottom: 20px;
+}
+
+#order-confirmation-container #invoice #invoice-shipping-heading {
+  font-size: 1rem;
+  font-weight: bolder;
+  padding: 10px 0;
+}
+
+#order-confirmation-container #invoice #invoice-order-details {
+  margin-bottom: 20px;
+}
+
+#order-confirmation-container #invoice #invoice-order-details-heading {
+  font-size: 1rem;
+  font-weight: bolder;
+  padding: 10px 0;
+}
+
+#order-confirmation-container #invoice #invoice-order-details-content {
+  padding: 2px 0;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  #order-confirmation-container {
+    padding: 10px;
+  }
+  #order-confirmation-container #greetings {
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  #order-confirmation-container #greetings h1 {
+    font-size: 1rem;
+    text-align: center;
+    letter-spacing: 0.3rem;
+    margin-bottom: 10px;
+  }
+  #order-confirmation-container #greetings h1 i {
+    margin: 0 5px;
+  }
+  #order-confirmation-container #greetings h3 {
+    font-size: 0.5rem;
+    letter-spacing: 0.2rem;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  #order-confirmation-container #greetings #continue-shopping {
+    padding: 7px 10px;
+    font-size: 0.6rem;
+    border-radius: 4px;
+  }
+  #order-confirmation-container #invoice {
+    padding: 10px 20px;
+    border-radius: 4px;
+  }
+  #order-confirmation-container #invoice #invoice-heading {
+    padding: 10px 0;
+  }
+  #order-confirmation-container #invoice #invoice-heading h4 {
+    font-size: 0.8rem;
+    text-align: start;
+    letter-spacing: 0.1rem;
+  }
+  #order-confirmation-container #invoice #invoice-shipping {
+    margin-bottom: 20px;
+  }
+  #order-confirmation-container #invoice #invoice-shipping h5 {
+    font-size: .7rem;
+  }
+  #order-confirmation-container #invoice #invoice-shipping-heading {
+    font-size: .9rem;
+    padding: 10px 0;
+  }
+  #order-confirmation-container #invoice #invoice-order-details {
+    margin-bottom: 20px;
+  }
+  #order-confirmation-container #invoice #invoice-order-details-heading {
+    font-size: .7rem;
+    padding: 10px 0;
+  }
+  #order-confirmation-container #invoice #invoice-order-details-content {
+    padding: 5px 0;
+    font-size: .9rem;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 600px) {
+  #order-confirmation-container {
+    padding: 10px;
+  }
+  #order-confirmation-container #greetings {
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  #order-confirmation-container #greetings h1 {
+    font-size: 1.2rem;
+    text-align: center;
+    letter-spacing: 0.3rem;
+    margin-bottom: 10px;
+  }
+  #order-confirmation-container #greetings h1 i {
+    margin: 0 5px;
+  }
+  #order-confirmation-container #greetings h3 {
+    font-size: .7rem;
+    letter-spacing: 0.2rem;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  #order-confirmation-container #greetings #continue-shopping {
+    padding: 8px 12px;
+    font-size: 0.7rem;
+    border-radius: 4px;
+  }
+  #order-confirmation-container #invoice {
+    padding: 10px 20px;
+    border-radius: 4px;
+  }
+  #order-confirmation-container #invoice #invoice-heading {
+    padding: 10px 0;
+  }
+  #order-confirmation-container #invoice #invoice-heading h4 {
+    font-size: 0.9rem;
+    text-align: start;
+    letter-spacing: 0.1rem;
+  }
+  #order-confirmation-container #invoice #invoice-shipping {
+    margin-bottom: 20px;
+  }
+  #order-confirmation-container #invoice #invoice-shipping h5 {
+    font-size: .8rem;
+  }
+  #order-confirmation-container #invoice #invoice-shipping-heading {
+    font-size: .8rem;
+    padding: 10px 0;
+  }
+  #order-confirmation-container #invoice #invoice-order-details {
+    margin-bottom: 20px;
+  }
+  #order-confirmation-container #invoice #invoice-order-details-heading {
+    font-size: .8rem;
+    padding: 10px 0;
+  }
+  #order-confirmation-container #invoice #invoice-order-details-content {
+    padding: 5px 0;
+    font-size: .8rem;
+  }
+}
+/*# sourceMappingURL=orderConfirmation.css.map */

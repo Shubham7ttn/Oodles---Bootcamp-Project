@@ -1,0 +1,307 @@
+#coupon-code-adv {
+  background: #fff;
+  width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 15px 15px 5px;
+  border-radius: 7px;
+  margin: 0 auto 30px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+  #coupon-code {
+    width: 30%;
+    padding: 5px;
+    h3 {
+      color: #4774c8;
+      font-size: 1.2rem;
+      font-weight: bolder;
+      letter-spacing: 0.07rem;
+    }
+  }
+  #coupon-code-info {
+    width: 70%;
+    padding: 10px;
+
+    h4 {
+      font-size: 1rem;
+      letter-spacing: 0.2rem;
+    }
+    p {
+      font-size: 0.7rem;
+      font-weight: bolder;
+      letter-spacing: 0.3rem;
+    }
+  }
+  #tnc {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+
+    p {
+      font-size: 0.5rem;
+      font-weight: 600;
+    }
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  #coupon-code-adv {
+    width: 250px;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 7px;
+    margin: 0 auto 10px;
+    #coupon-code {
+      padding: 2px;
+      display: flex;
+      justify-content: center;
+      h3 {
+        font-size: 0.9rem;
+        letter-spacing: 0.2rem;
+      }
+    }
+    #coupon-code-info {
+      width: 70%;
+      padding: 1px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      h4 {
+        text-align: center;
+        font-size: 0.7rem;
+        letter-spacing: 0.1rem;
+      }
+      p {
+        text-align: center;
+        font-size: 0.5rem;
+        letter-spacing: 0.1rem;
+      }
+    }
+    #tnc {
+      width: 100%;
+      p {
+        font-size: 0.4rem;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 600px) {
+  #coupon-code-adv {
+    width: 400px;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 12px;
+    margin: 0 auto 10px;
+    #coupon-code {
+      padding: 3px;
+      display: flex;
+      justify-content: center;
+      h3 {
+        font-size: 1.1rem;
+        letter-spacing: 0.4rem;
+      }
+    }
+    #coupon-code-info {
+      width: 70%;
+      padding: 2px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      h4 {
+        text-align: center;
+        font-size: 0.9rem;
+        letter-spacing: 0.2rem;
+      }
+      p {
+        text-align: center;
+        font-size: 0.7rem;
+        letter-spacing: 0.1rem;
+      }
+    }
+    #tnc {
+      width: 100%;
+      p {
+        font-size: 0.5rem;
+      }
+    }
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 601px) and (max-width: 767px) {
+  #coupon-code-adv {
+    width: 500px;
+    padding: 15px 15px 5px;
+    margin: 0 auto 30px;
+    #coupon-code {
+      width: 40%;
+      padding: 5px;
+      h3 {
+        font-size: 1.1rem;
+        letter-spacing: 0.2rem;
+      }
+    }
+    #coupon-code-info {
+      width: 60%;
+      padding: 10px;
+
+      h4 {
+        font-size: 0.9rem;
+        letter-spacing: 0.2rem;
+      }
+      p {
+        font-size: 0.6rem;
+        letter-spacing: 0.2rem;
+      }
+    }
+    #tnc {
+      width: 100%;
+      p {
+        font-size: 0.5rem;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  #coupon-code-adv {
+    width: 600px;
+    padding: 15px 15px 5px;
+    margin: 0 auto 30px;
+    #coupon-code {
+      padding: 5px;
+      h3 {
+        font-size: 1.2rem;
+      }
+    }
+    #coupon-code-info {
+      width: 70%;
+      padding: 10px;
+
+      h4 {
+        font-size: 1rem;
+        letter-spacing: 0.2rem;
+      }
+      p {
+        font-size: 0.7rem;
+        letter-spacing: 0.3rem;
+      }
+    }
+    #tnc {
+      width: 100%;
+      p {
+        font-size: 0.5rem;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  #coupon-code-adv {
+    width: 600px;
+    padding: 15px 15px 5px;
+    margin: 0 auto 30px;
+    #coupon-code {
+      padding: 5px;
+      h3 {
+        font-size: 1.2rem;
+      }
+    }
+    #coupon-code-info {
+      width: 70%;
+      padding: 10px;
+
+      h4 {
+        font-size: 1rem;
+        letter-spacing: 0.2rem;
+      }
+      p {
+        font-size: 0.7rem;
+        letter-spacing: 0.3rem;
+      }
+    }
+    #tnc {
+      width: 100%;
+      p {
+        font-size: 0.5rem;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  #coupon-code-adv {
+    width: 600px;
+    padding: 15px 15px 5px;
+    margin: 0 auto 30px;
+    #coupon-code {
+      padding: 5px;
+      h3 {
+        font-size: 1.2rem;
+      }
+    }
+    #coupon-code-info {
+      width: 70%;
+      padding: 10px;
+
+      h4 {
+        font-size: 1rem;
+        letter-spacing: 0.2rem;
+      }
+      p {
+        font-size: 0.7rem;
+        letter-spacing: 0.3rem;
+      }
+    }
+    #tnc {
+      width: 100%;
+      p {
+        font-size: 0.5rem;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+// Larger Devices
+@media only screen and (min-width: 1400px) {
+  #coupon-code-adv {
+    width: 600px;
+    padding: 15px 15px 5px;
+    margin: 0 auto 30px;
+    #coupon-code {
+      padding: 5px;
+      h3 {
+        font-size: 1.2rem;
+      }
+    }
+    #coupon-code-info {
+      width: 70%;
+      padding: 10px;
+
+      h4 {
+        font-size: 1rem;
+        letter-spacing: 0.2rem;
+      }
+      p {
+        font-size: 0.7rem;
+        letter-spacing: 0.3rem;
+      }
+    }
+    #tnc {
+      width: 100%;
+      p {
+        font-size: 0.5rem;
+        font-weight: 600;
+      }
+    }
+  }
+}

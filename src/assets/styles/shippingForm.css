@@ -1,0 +1,431 @@
+#shipping-details-form-container #shipping-details-form-header {
+  margin-bottom: 20px;
+}
+
+#shipping-details-form-container #shipping-details-form-header h1 {
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-size: 2rem;
+}
+
+#shipping-details-form-container #shipping-details-form-header p {
+  letter-spacing: 0.1rem;
+  font-weight: bolder;
+  font-size: 0.9rem;
+  color: #a61f12;
+}
+
+#shipping-details-form-container form {
+  padding: 20px 0;
+}
+
+#shipping-details-form-container form .fields {
+  padding: 10px 0;
+}
+
+#shipping-details-form-container form .fields input,
+#shipping-details-form-container form .fields select {
+  height: 30px;
+  padding: 20px;
+  font-size: 0.9rem;
+  font-weight: bolder;
+  color: #c84771;
+  border: 2px solid #c84772b0;
+  letter-spacing: 0.2rem;
+}
+
+#shipping-details-form-container form #name-error, #shipping-details-form-container form #city-country-error, #shipping-details-form-container form #zip-phone-error {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#shipping-details-form-container form .form-error {
+  font-size: 0.6rem;
+  color: red;
+  letter-spacing: 0.1rem;
+  font-weight: bolder;
+}
+
+#shipping-details-form-container form #name-fields {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#shipping-details-form-container form #name-fields input {
+  width: 45%;
+}
+
+#shipping-details-form-container form #address-line1-field input,
+#shipping-details-form-container form #address-line2-field input {
+  width: 100%;
+}
+
+#shipping-details-form-container form #country-city-field,
+#shipping-details-form-container form #zip-phone-field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#shipping-details-form-container form #country-city-field select,
+#shipping-details-form-container form #country-city-field input,
+#shipping-details-form-container form #zip-phone-field select,
+#shipping-details-form-container form #zip-phone-field input {
+  width: 45%;
+}
+
+#shipping-details-form-container form #shipping-options-div {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#shipping-details-form-container form #shipping-options-div #free-shipping-container,
+#shipping-details-form-container form #shipping-options-div #next-day-shipping-container {
+  background: #cac9c9;
+  padding: 20px 10px;
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#shipping-details-form-container form #shipping-options-div #free-shipping-container h3,
+#shipping-details-form-container form #shipping-options-div #next-day-shipping-container h3 {
+  font-size: 1rem;
+}
+
+#shipping-details-form-container form #shipping-options-div #free-shipping-container p,
+#shipping-details-form-container form #shipping-options-div #next-day-shipping-container p {
+  font-size: 0.7rem;
+  font-weight: bolder;
+  letter-spacing: 0.1rem;
+}
+
+#shipping-details-form-container form #shipping-options-div #free-shipping-container label,
+#shipping-details-form-container form #shipping-options-div #next-day-shipping-container label {
+  padding: 0 20px;
+}
+
+#shipping-details-form-container form #submit-button-container {
+  padding: 20px 0;
+}
+
+#shipping-details-form-container form #submit-button-container button {
+  padding: 20px 0;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: bolder;
+  letter-spacing: 0.3rem;
+  background: #4774c8;
+  border: none;
+  outline: none;
+  color: #fff;
+}
+
+#shipping-details-form-container form #submit-button-container button:hover {
+  cursor: pointer;
+  -webkit-box-shadow: #c84772b0 0px 0px 0px 3px;
+          box-shadow: #c84772b0 0px 0px 0px 3px;
+  color: #000;
+  background: #fff;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  #shipping-details-form-container #shipping-details-form-header {
+    margin-bottom: 5px;
+  }
+  #shipping-details-form-container #shipping-details-form-header h1 {
+    letter-spacing: 0.2rem;
+    font-size: 1.2rem;
+    padding: 0 0 10px 0;
+  }
+  #shipping-details-form-container #shipping-details-form-header p {
+    letter-spacing: 0.1rem;
+    font-size: 0.5rem;
+  }
+  #shipping-details-form-container form {
+    padding: 10px 0;
+  }
+  #shipping-details-form-container form .fields {
+    padding: 10px 0;
+  }
+  #shipping-details-form-container form .fields input,
+  #shipping-details-form-container form .fields select {
+    height: 15px;
+    padding: 15px;
+    font-size: 0.6rem;
+    border: 1px solid #c84772b0;
+    letter-spacing: 0.2rem;
+  }
+  #shipping-details-form-container form #shipping-options-div {
+    margin-top: 10px;
+  }
+  #shipping-details-form-container form #shipping-options-div #free-shipping-container,
+  #shipping-details-form-container form #shipping-options-div #next-day-shipping-container {
+    padding: 20px 10px;
+    width: 45%;
+    height: 130px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #shipping-details-form-container form #shipping-options-div #free-shipping-container h3,
+  #shipping-details-form-container form #shipping-options-div #next-day-shipping-container h3 {
+    font-size: 0.7rem;
+  }
+  #shipping-details-form-container form #shipping-options-div #free-shipping-container p,
+  #shipping-details-form-container form #shipping-options-div #next-day-shipping-container p {
+    font-size: 0.5rem;
+    letter-spacing: 0.1rem;
+  }
+  #shipping-details-form-container form #shipping-options-div #free-shipping-container label,
+  #shipping-details-form-container form #shipping-options-div #next-day-shipping-container label {
+    padding: 0 20px;
+  }
+  #shipping-details-form-container form #submit-button-container {
+    padding: 10px 0;
+  }
+  #shipping-details-form-container form #submit-button-container button {
+    padding: 15px 0;
+    font-size: 0.7rem;
+    letter-spacing: 0.2rem;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 600px) {
+  #shipping-details-form-container #shipping-details-form-header {
+    margin-bottom: 5px;
+  }
+  #shipping-details-form-container #shipping-details-form-header h1 {
+    letter-spacing: 0.2rem;
+    font-size: 1.2rem;
+    padding: 0 0 10px 0;
+  }
+  #shipping-details-form-container #shipping-details-form-header p {
+    letter-spacing: 0.1rem;
+    font-size: 0.5rem;
+  }
+  #shipping-details-form-container form {
+    padding: 10px 0;
+  }
+  #shipping-details-form-container form .fields {
+    padding: 10px 0;
+  }
+  #shipping-details-form-container form .fields input,
+  #shipping-details-form-container form .fields select {
+    height: 15px;
+    padding: 15px;
+    font-size: 0.6rem;
+    border: 1px solid #c84772b0;
+    letter-spacing: 0.2rem;
+  }
+  #shipping-details-form-container form #shipping-options-div {
+    margin-top: 10px;
+  }
+  #shipping-details-form-container form #shipping-options-div #free-shipping-container,
+  #shipping-details-form-container form #shipping-options-div #next-day-shipping-container {
+    padding: 20px 10px;
+    width: 45%;
+    height: 130px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #shipping-details-form-container form #shipping-options-div #free-shipping-container h3,
+  #shipping-details-form-container form #shipping-options-div #next-day-shipping-container h3 {
+    font-size: 0.7rem;
+  }
+  #shipping-details-form-container form #shipping-options-div #free-shipping-container p,
+  #shipping-details-form-container form #shipping-options-div #next-day-shipping-container p {
+    font-size: 0.5rem;
+    letter-spacing: 0.1rem;
+  }
+  #shipping-details-form-container form #shipping-options-div #free-shipping-container label,
+  #shipping-details-form-container form #shipping-options-div #next-day-shipping-container label {
+    padding: 0 20px;
+  }
+  #shipping-details-form-container form #submit-button-container {
+    padding: 10px 0;
+  }
+  #shipping-details-form-container form #submit-button-container button {
+    padding: 15px 0;
+    font-size: 0.7rem;
+    letter-spacing: 0.2rem;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 767px) {
+  #shipping-details-form-container #shipping-details-form-header {
+    margin-bottom: 5px;
+  }
+  #shipping-details-form-container #shipping-details-form-header h1 {
+    letter-spacing: 0.2rem;
+    font-size: 1.2rem;
+    padding: 0 0 10px 0;
+  }
+  #shipping-details-form-container #shipping-details-form-header p {
+    letter-spacing: 0.1rem;
+    font-size: 0.5rem;
+  }
+  #shipping-details-form-container form {
+    padding: 10px 0;
+  }
+  #shipping-details-form-container form .fields {
+    padding: 10px 0;
+  }
+  #shipping-details-form-container form .fields input,
+  #shipping-details-form-container form .fields select {
+    height: 15px;
+    padding: 15px;
+    font-size: 0.6rem;
+    border: 1px solid #c84772b0;
+    letter-spacing: 0.2rem;
+  }
+  #shipping-details-form-container form #shipping-options-div {
+    margin-top: 10px;
+  }
+  #shipping-details-form-container form #shipping-options-div #free-shipping-container,
+  #shipping-details-form-container form #shipping-options-div #next-day-shipping-container {
+    padding: 20px 10px;
+    width: 45%;
+    height: 130px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #shipping-details-form-container form #shipping-options-div #free-shipping-container h3,
+  #shipping-details-form-container form #shipping-options-div #next-day-shipping-container h3 {
+    font-size: 0.7rem;
+  }
+  #shipping-details-form-container form #shipping-options-div #free-shipping-container p,
+  #shipping-details-form-container form #shipping-options-div #next-day-shipping-container p {
+    font-size: 0.5rem;
+    letter-spacing: 0.1rem;
+  }
+  #shipping-details-form-container form #shipping-options-div #free-shipping-container label,
+  #shipping-details-form-container form #shipping-options-div #next-day-shipping-container label {
+    padding: 0 20px;
+  }
+  #shipping-details-form-container form #submit-button-container {
+    padding: 10px 0;
+  }
+  #shipping-details-form-container form #submit-button-container button {
+    padding: 15px 0;
+    font-size: 0.7rem;
+    letter-spacing: 0.2rem;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  #product-description-container {
+    border-radius: 10px;
+    padding: 20px;
+  }
+  #product-description-container #product-image-container {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #product-description-container #product-image-container img {
+    width: 400px;
+    height: 400px;
+  }
+  #product-description-container #product-complete-description {
+    width: 100%;
+    padding: 20px 30px;
+  }
+  #product-description-container #product-complete-description #product-name {
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+  }
+  #product-description-container #product-complete-description #product-seller-name {
+    font-size: 1.1rem;
+    padding: 5px 0;
+    letter-spacing: 0.2rem;
+  }
+  #product-description-container #product-complete-description .product-stock-status {
+    padding: 5px 0;
+    font-size: 1.4rem;
+    letter-spacing: 0.2rem;
+  }
+  #product-description-container #product-complete-description #product-price {
+    font-size: 2.7rem;
+    letter-spacing: 0.2rem;
+  }
+  #product-description-container #product-complete-description #product-long-description {
+    padding: 10px 0;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    margin-bottom: 20px;
+  }
+  #product-description-container #product-complete-description #product-variant-div {
+    padding: 10px 0;
+    margin-bottom: 30px;
+  }
+  #product-description-container #product-complete-description #product-variant-div .variant-selector {
+    margin: 0 35px 0 0;
+  }
+  #product-description-container #product-complete-description #product-variant-div .variant-selector p {
+    padding-right: 20px;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+  }
+  #product-description-container #product-complete-description #product-variant-div .variant-selector select {
+    padding: 10px;
+    width: 25vw;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  #product-description-container #product-complete-description #add-to-cart-btn {
+    padding: 20px 25px;
+    font-size: 1rem;
+    border-radius: 7px;
+    letter-spacing: 0.2rem;
+  }
+}
+/*# sourceMappingURL=shippingForm.css.map */

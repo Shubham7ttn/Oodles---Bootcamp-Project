@@ -1,0 +1,185 @@
+#search-bar-container {
+  width: 700px;
+  height: 75px;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  overflow: hidden;
+
+  #search-bar {
+    height: 100%;
+    width: 638px;
+    outline: none;
+    border: none;
+    background: none;
+    padding: 20px;
+    font-size: 1.2rem;
+    color: #1f1f1f;
+    letter-spacing: 3px;
+    border-radius: inherit;
+  }
+  #search-bar-icon {
+    position: absolute;
+    right: 0;
+    padding: 15px;
+    height: 100%;
+    width: 62px;
+    font-size: 2rem;
+    background: #c84771;
+    color: rgb(230, 227, 227);
+    font-weight: lighter;
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+        rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+      background: #4774c8;
+      transition: all 0.3s linear;
+      i {
+        transform: rotate(15deg);
+        transition: all 0.3s linear;
+      }
+    }
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  #search-bar-container {
+    width: 200px;
+    height: 40px;
+
+    #search-bar {
+      width: 161px;
+      padding: 12px;
+      font-size: 0.5rem;
+      letter-spacing: 0.5px;
+
+      &:hover {
+        transition: all 1s linear;
+      }
+    }
+    #search-bar-icon {
+      width: 39px;
+      font-size: 0.6rem;
+    }
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 600px) {
+  #search-bar-container {
+    width: 350px;
+    height: 45px;
+
+    #search-bar {
+      width: 306px;
+      padding: 15px;
+      font-size: 0.7rem;
+      letter-spacing: 1.5px;
+    }
+    #search-bar-icon {
+      padding: auto 7px;
+      font-size: 0.9rem;
+      width: 44px;
+    }
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 601px) and (max-width: 767px) {
+  #search-bar-container {
+    width: 320px;
+    height: 40px;
+
+    #search-bar {
+      width: 276px;
+      padding: 10px;
+      font-size: 0.7rem;
+      letter-spacing: 1.5px;
+    }
+    #search-bar-icon {
+      padding: 10px 14px;
+      font-size: 1rem;
+      width: 44px;
+    }
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  #search-bar-container {
+    width: 420px;
+    height: 60px;
+
+    #search-bar {
+      width: 370px;
+      padding: 15px;
+      font-size: 0.8rem;
+      letter-spacing: 1.7px;
+    }
+    #search-bar-icon {
+      padding: 18px 15px;
+      font-size: 1.2rem;
+      width: 50px;
+    }
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  #search-bar-container {
+    width: 550px;
+    height: 55px;
+
+    #search-bar {
+      width: 480px;
+      padding: 20px;
+      font-size: 1rem;
+      letter-spacing: 2px;
+    }
+    #search-bar-icon {
+      padding: 12px 25px;
+      font-size: 1.5rem;
+      width: 70px;
+    }
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  #search-bar-container {
+    width: 750px;
+    height: 60px;
+
+    #search-bar {
+      width: 675px;
+      padding: 20px;
+      font-size: 1.2rem;
+      letter-spacing: 2.5px;
+    }
+    #search-bar-icon {
+      padding: 14px 25px;
+      font-size: 1.5rem;
+      width: 75px;
+    }
+  }
+}
+
+// Larger Devices
+@media only screen and (min-width: 1400px) {
+  #search-bar-container {
+    width: 820px;
+    height: 70px;
+
+    #search-bar {
+      width: 740px;
+      padding: 20px;
+      font-size: 1.5rem;
+      letter-spacing: 3.5px;
+    }
+    #search-bar-icon {
+      padding: 16px 26px;
+      font-size: 1.7rem;
+      width: 80px;
+    }
+  }
+}

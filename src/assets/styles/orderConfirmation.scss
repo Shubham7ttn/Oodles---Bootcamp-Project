@@ -1,0 +1,205 @@
+#order-confirmation-container {
+  display: flex;
+  padding: 50px;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+  #greetings {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    color: #0d7a16;
+    h1 {
+      font-size: 4vw;
+      letter-spacing: 0.3rem;
+      i {
+        margin: 0 10px;
+      }
+    }
+    h3 {
+      font-size: 1.5vw;
+      letter-spacing: 0.3rem;
+      margin-bottom: 20px;
+    }
+    #continue-shopping {
+      padding: 10px 20px;
+      font-size: 1.2vw;
+      background: #c84771;
+      color: #fff;
+      border-radius: 7px;
+
+      &:hover {
+        color: black;
+        background: #e7e5e5;
+        box-shadow: #4774c8b4 0px 0px 0px 3px;
+      }
+    }
+  }
+  #invoice {
+    background: #fff;
+    padding: 20px;
+    border-radius: 7px;
+    #invoice-heading {
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      h4 {
+        font-weight: bolder;
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
+      }
+    }
+    #invoice-shipping {
+      margin-bottom: 20px;
+      &-heading {
+        font-size: 1rem;
+        font-weight: bolder;
+        padding: 10px 0;
+      }
+    }
+    #invoice-order-details {
+      margin-bottom: 20px;
+      &-heading {
+        font-size: 1rem;
+        font-weight: bolder;
+        padding: 10px 0;
+      }
+      &-content {
+        padding: 2px 0;
+      }
+    }
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  #order-confirmation-container {
+    padding: 10px;
+    #greetings {
+      padding: 20px;
+      margin-bottom: 20px;
+      h1 {
+        font-size: 1rem;
+        text-align: center;
+        letter-spacing: 0.3rem;
+        margin-bottom: 10px;
+        i {
+          margin: 0 5px;
+        }
+      }
+      h3 {
+        font-size: 0.5rem;
+        letter-spacing: 0.2rem;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+      #continue-shopping {
+        padding: 7px 10px;
+        font-size: 0.6rem;
+        border-radius: 4px;
+      }
+    }
+    #invoice {
+      padding: 10px 20px;
+      border-radius: 4px;
+      #invoice-heading {
+        padding: 10px 0;
+        h4 {
+          font-size: 0.8rem;
+          text-align: start;
+          letter-spacing: 0.1rem;
+        }
+      }
+      #invoice-shipping {
+        margin-bottom: 20px;
+        h5{
+            font-size: .7rem;
+        }
+        &-heading {
+          font-size: .9rem;
+          padding: 10px 0;
+        }
+      }
+      #invoice-order-details {
+        margin-bottom: 20px;
+        &-heading {
+          font-size: .7rem;
+          padding: 10px 0;
+        }
+        &-content {
+          padding: 5px 0;
+          font-size: .9rem;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 600px) {
+    #order-confirmation-container {
+        padding: 10px;
+        #greetings {
+          padding: 20px;
+          margin-bottom: 20px;
+          h1 {
+            font-size: 1.2rem;
+            text-align: center;
+            letter-spacing: 0.3rem;
+            margin-bottom: 10px;
+            i {
+              margin: 0 5px;
+            }
+          }
+          h3 {
+            font-size: .7rem;
+            letter-spacing: 0.2rem;
+            text-align: center;
+            margin-bottom: 10px;
+          }
+          #continue-shopping {
+            padding: 8px 12px;
+            font-size: 0.7rem;
+            border-radius: 4px;
+          }
+        }
+        #invoice {
+          padding: 10px 20px;
+          border-radius: 4px;
+          #invoice-heading {
+            padding: 10px 0;
+            h4 {
+              font-size: 0.9rem;
+              text-align: start;
+              letter-spacing: 0.1rem;
+            }
+          }
+          #invoice-shipping {
+            margin-bottom: 20px;
+            h5{
+                font-size: .8rem;
+            }
+            &-heading {
+              font-size: .8rem;
+              padding: 10px 0;
+            }
+          }
+          #invoice-order-details {
+            margin-bottom: 20px;
+            &-heading {
+              font-size: .8rem;
+              padding: 10px 0;
+            }
+            &-content {
+              padding: 5px 0;
+              font-size: .8rem;
+            }
+          }
+        }
+      }
+}

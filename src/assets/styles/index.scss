@@ -1,0 +1,18 @@
+@import "font";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: $docFont;
+  transition: all 0.3s linear;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: #e7e5e5;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}

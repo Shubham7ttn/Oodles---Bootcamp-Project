@@ -1,0 +1,382 @@
+#payment-page-heading {
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-size: 2rem;
+  margin: 0 0 20px 0;
+}
+#credit-card-container {
+  padding: 20px;
+  border: 2px solid #3f3f3f;
+  border-radius: 7px;
+  margin: 0 0 50px 0;
+  #credit-card-header {
+    display: flex;
+    align-items: center;
+
+    h3 {
+      padding: 0 0 0 10px;
+      font-size: 1rem;
+      text-transform: uppercase;
+      font-weight: bolder;
+      letter-spacing: 0.2rem;
+    }
+  }
+  #credit-card {
+    padding: 20px 0;
+    input {
+      height: 40px;
+      padding: 0 7px;
+      font-size: 0.7rem;
+      letter-spacing: 0.1rem;
+      text-transform: uppercase;
+    }
+    h3 {
+      font-size: 0.8rem;
+      padding-bottom: 10px;
+      text-transform: uppercase;
+      font-weight: bolder;
+      letter-spacing: 0.2rem;
+    }
+    #card-holder-name {
+      width: 100%;
+    }
+    #card-details {
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      #cc-number {
+        width: 60%;
+      }
+      #cc-expiry,
+      #cc-cvv {
+        width: 15%;
+      }
+    }
+  }
+}
+#paypal-container {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #3f3f3f;
+  border-radius: 7px;
+  #paypal-header {
+    display: flex;
+    align-items: center;
+    #about-paypal {
+      padding: 20px 10px;
+    }
+  }
+  #paypal-logo-container {
+    #paypal-logo {
+      height: 40px;
+      width: 120px;
+    }
+    #paypal-logo-small {
+      display: none;
+      height: 70px;
+      width: 70px;
+    }
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  #payment-page-heading {
+    letter-spacing: 0.1rem;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+  }
+  #credit-card-container {
+    padding: 20px;
+    border-radius: 7px;
+    margin-bottom: 50px;
+    #credit-card-header {
+      h3 {
+        padding: 0 0 0 10px;
+        font-size: 0.8rem;
+        letter-spacing: 0.1rem;
+      }
+    }
+    #credit-card {
+      padding: 10px 0;
+      input {
+        height: 35px;
+        padding: 0 5px;
+        font-size: 0.5rem;
+        letter-spacing: 0;
+      }
+      h3 {
+        font-size: 0.5rem;
+        padding-bottom: 10px;
+        letter-spacing: 0.1rem;
+      }
+      #card-holder-name {
+        width: 100%;
+      }
+      #card-details {
+        margin-bottom: 10px;
+        #cc-number {
+          width: 60%;
+        }
+        #cc-expiry,
+        #cc-cvv {
+          width: 15%;
+        }
+      }
+    }
+  }
+  #paypal-container {
+    padding: 20px;
+    border-radius: 7px;
+    #paypal-header {
+      #about-paypal {
+        padding: 10px;
+        h3 {
+          font-size: 0.9rem;
+          letter-spacing: 0.2rem;
+        }
+        p {
+          font-size: 0.7rem;
+          padding: 10px 0;
+          text-align: justify;
+        }
+      }
+    }
+    #paypal-logo-container {
+      #paypal-logo {
+        display: none;
+      }
+      #paypal-logo-small {
+        display: block;
+        height: 70px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 600px) {
+  #payment-page-heading {
+    letter-spacing: 0.1rem;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+  }
+  #credit-card-container {
+    padding: 20px;
+    border-radius: 7px;
+    margin-bottom: 50px;
+    #credit-card-header {
+      h3 {
+        padding: 0 0 0 10px;
+        font-size: 0.8rem;
+        letter-spacing: 0.1rem;
+      }
+    }
+    #credit-card {
+      padding: 10px 0;
+      input {
+        height: 35px;
+        padding: 0 5px;
+        font-size: 0.5rem;
+        letter-spacing: 0;
+      }
+      h3 {
+        font-size: 0.5rem;
+        padding-bottom: 10px;
+        letter-spacing: 0.1rem;
+      }
+      #card-holder-name {
+        width: 100%;
+      }
+      #card-details {
+        margin-bottom: 10px;
+        #cc-number {
+          width: 60%;
+        }
+        #cc-expiry,
+        #cc-cvv {
+          width: 15%;
+        }
+      }
+    }
+  }
+  #paypal-container {
+    padding: 20px;
+    border-radius: 7px;
+    #paypal-header {
+      #about-paypal {
+        padding: 10px;
+        h3 {
+          font-size: 0.9rem;
+          letter-spacing: 0.2rem;
+        }
+        p {
+          font-size: 0.7rem;
+          padding: 10px 0;
+          text-align: justify;
+        }
+      }
+    }
+    #paypal-logo-container {
+      #paypal-logo {
+        display: none;
+      }
+      #paypal-logo-small {
+        display: block;
+        height: 70px;
+      }
+    }
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 601px) and (max-width: 767px) {
+  #payment-page-heading {
+    letter-spacing: 0.1rem;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+  }
+  #credit-card-container {
+    padding: 20px;
+    border-radius: 7px;
+    margin-bottom: 50px;
+    #credit-card-header {
+      h3 {
+        padding: 0 0 0 10px;
+        font-size: 0.8rem;
+        letter-spacing: 0.1rem;
+      }
+    }
+    #credit-card {
+      padding: 10px 0;
+      input {
+        height: 35px;
+        padding: 0 5px;
+        font-size: 0.5rem;
+        letter-spacing: 0;
+      }
+      h3 {
+        font-size: 0.5rem;
+        padding-bottom: 10px;
+        letter-spacing: 0.1rem;
+      }
+      #card-holder-name {
+        width: 100%;
+      }
+      #card-details {
+        margin-bottom: 10px;
+        #cc-number {
+          width: 60%;
+        }
+        #cc-expiry,
+        #cc-cvv {
+          width: 15%;
+        }
+      }
+    }
+  }
+  #paypal-container {
+    padding: 20px;
+    border-radius: 7px;
+    #paypal-header {
+      #about-paypal {
+        padding: 10px;
+        h3 {
+          font-size: 0.9rem;
+          letter-spacing: 0.2rem;
+        }
+        p {
+          font-size: 0.7rem;
+          padding: 10px 0;
+          text-align: justify;
+        }
+      }
+    }
+    #paypal-logo-container {
+      #paypal-logo {
+        display: none;
+      }
+      #paypal-logo-small {
+        display: block;
+        height: 70px;
+      }
+    }
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  #payment-page-heading {
+    letter-spacing: 0.1rem;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+  }
+  #credit-card-container {
+    padding: 20px;
+    border-radius: 7px;
+    margin-bottom: 50px;
+    #credit-card-header {
+      h3 {
+        padding: 0 0 0 10px;
+        font-size: 0.8rem;
+        letter-spacing: 0.1rem;
+      }
+    }
+    #credit-card {
+      padding: 10px 0;
+      input {
+        height: 35px;
+        padding: 0 5px;
+        font-size: 0.5rem;
+        letter-spacing: 0;
+      }
+      h3 {
+        font-size: 0.5rem;
+        padding-bottom: 10px;
+        letter-spacing: 0.1rem;
+      }
+      #card-holder-name {
+        width: 100%;
+      }
+      #card-details {
+        margin-bottom: 10px;
+        #cc-number {
+          width: 60%;
+        }
+        #cc-expiry,
+        #cc-cvv {
+          width: 15%;
+        }
+      }
+    }
+  }
+  #paypal-container {
+    padding: 20px;
+    border-radius: 7px;
+    #paypal-header {
+      #about-paypal {
+        padding: 10px;
+        h3 {
+          font-size: 0.9rem;
+          letter-spacing: 0.2rem;
+        }
+        p {
+          font-size: 0.7rem;
+          padding: 10px 0;
+          text-align: justify;
+        }
+      }
+    }
+    #paypal-logo-container {
+      #paypal-logo {
+        display: none;
+      }
+      #paypal-logo-small {
+        display: block;
+        height: 70px;
+      }
+    }
+  }
+}
